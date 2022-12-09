@@ -94,16 +94,12 @@ body {
   content: '→';
   width: 30px;
   height: 17px;
-  background-color: #000000;
-  font-size: 35px;
-  font-family: 'Courier New', Courier, monospace;
 }
 .slick-next {
   top: 120% !important;
   right: 191px !important;
 }
 .slick-prev:before {
-  content: '→';
   width: 30px;
   height: 17px;
   background-color: #000000;
