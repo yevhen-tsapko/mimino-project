@@ -1,0 +1,93 @@
+.header {
+  // position: absolute;
+  // left: 0;
+  top: 0;
+  padding-top: 16px;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 52px;
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 39/36;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  color: black;
+  @include tablet {
+    margin-right: 87px;
+  }
+  @include desktop {
+    margin-right: 96px;
+  }
+}
+.nav__list {
+  display: flex;
+  gap: 20px;
+  @include tablet {
+    gap: 72px;
+  }
+  @include desktop {
+    gap: 80px;
+  }
+}
+.nav__list {
+  display: flex;
+  gap: 6px;
+  @include tablet {
+    gap: 32px;
+  }
+}
+.nav__item {
+  display: flex;
+  align-items: center;
+}
+.nav__link {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $modalBackgroundColor;
+}
+.nav__link-tel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 6px;
+  @include tablet {
+    margin-left: 32px;
+  }
+  &::before {
+    content: '';
+    margin-right: 8px;
+    background-position: center;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/main-page/hug.png);
+  }
+}
+.nav__tel {
+  margin-left: 16px;
+}
+.span-tel {
+  display: none;
+  @include tablet {
+    display: block;
+  }
+}
+.social__icon {
+  fill: $modalBackgroundColor;
+}
+.social__header {
+  display: none;
+  @include desktop {
+    display: flex;
+    gap: 20px;
+    margin-left: 59px;
+  }
+}
