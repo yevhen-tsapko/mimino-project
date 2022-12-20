@@ -71,7 +71,7 @@
     background-image: url(../images/main-page/hug.png);
   }
 }
-.nav__tel {
+.second-hotel-tel {
   margin-left: 16px;
 }
 .span-tel {
@@ -79,6 +79,9 @@
   @include tablet {
     display: block;
   }
+}
+.second-hotel-tel {
+  margin-left: 16px;
 }
 .social__icon {
   fill: $modalBackgroundColor;
