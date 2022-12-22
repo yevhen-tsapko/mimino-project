@@ -1,0 +1,47 @@
+.small-button {
+  width: 236px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid $whiteColor;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $modalBackgroundColor;
+  &:hover {
+    background-color: $whiteColor;
+    border-color: $modalBackgroundColor;
+  }
+}
+.big-button {
+  width: 434px;
+  height: 64px;
+  background: $textBlackColor;
+  border: 1px solid $modalBackgroundColor;
+  border-radius: 25px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $whiteColor;
+  &:hover {
+    color: $textBlackColor;
+    background-color: $modalBackgroundColor;
+  }
+}
+.modal-tablet-button {
+  width: 592px;
+  height: 64px;
+  background: $textBlackColor;
+  border: 1px solid $modalBackgroundColor;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $whiteColor;
+  &:hover {
+    background-color: $modalBackgroundColor;
+    color: $textBlackColor;
+  }
+}
