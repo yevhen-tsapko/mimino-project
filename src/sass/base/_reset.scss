@@ -1,6 +1,6 @@
-.list {
-  list-style: none;
-}
+// .list {
+//   list-style: none;
+// }
 a {
   text-decoration: none;
 }
@@ -9,16 +9,11 @@ h1,
 h2,
 h3 {
   margin: 0;
+  padding: 0;
 }
 ul,
 ol {
   margin: 0;
   padding-left: 0;
-}
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
+  list-style: none;
 }
