@@ -1,0 +1,38 @@
+.flex-cont.about-hotel {
+  @include tablet {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+  @include desktop {
+    gap: 37px;
+  }
+}
+.slogan-container.about-hotel {
+  margin-left: auto;
+  text-align: end;
+}
+.slogan-text.about-hotel {
+  text-align: start;
+}
+.second-room.about-hotel {
+  flex-direction: row-reverse;
+}
+
+.slider__wrap.about-hotel {
+  margin-right: auto;
+  margin-left: -15px;
+
+  @include tablet {
+    margin-left: 13px;
+  }
+  @include desktop {
+    width: 547px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: -84px;
+    padding-left: 0;
+  }
+}
+.restaurant-about-slider.slider__wrap {
+  justify-content: end;
+}

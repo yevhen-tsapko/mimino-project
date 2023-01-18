@@ -1,4 +1,4 @@
-.about-restoran {
+.about {
   padding-bottom: 18px;
   background-color: $primaryBackgroundColor;
 }
@@ -8,11 +8,9 @@
   @include tablet {
     width: 466px;
     padding-top: 153px;
-    padding-right: 50px;
   }
   @include desktop {
     width: 555px;
-    margin-right: 37px;
   }
 }
 .flex-cont {
@@ -21,7 +19,7 @@
     transform: translateY(-33px);
   }
 }
-.slogan-restaurant {
+.slogan-slogan {
   margin-bottom: 12px;
 
   font-family: 'Times New Roman';
@@ -35,7 +33,7 @@
   }
 }
 
-.restaurant-name {
+.slogan-name {
   margin-bottom: 12px;
 
   font-family: 'Film P3';
@@ -50,7 +48,7 @@
     margin-bottom: 24px;
   }
 }
-.restaurant-text {
+.slogan-text {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.2;
@@ -65,9 +63,8 @@
     transform: translateY(-33px);
   }
 }
-.about-rest-img {
+.about-1-img {
   width: 244px;
-  margin: 0 0 0 auto;
 
   @include tablet {
     width: 350px;
@@ -76,6 +73,9 @@
   @include desktop {
     width: 460px;
   }
+}
+.about-1-img.about-rest {
+  margin-left: auto;
 }
 .second-room {
   display: flex;
@@ -102,7 +102,7 @@
   }
 }
 .second-room__text {
-  @extend .restaurant-text;
+  @extend .slogan-text;
   color: $borderColor;
   padding-top: 70px;
   @include tablet {
@@ -119,12 +119,11 @@
   margin-right: -15px;
   margin-left: auto;
   margin-top: 46px;
-  // padding-left: 62px;
+
   @include tablet {
     width: 427px;
-    margin-right: 13px;
+    margin-right: 0;
     margin-top: -68px;
-    // padding-left: 0;
   }
   @include desktop {
     width: 547px;
@@ -136,17 +135,26 @@
 }
 .restaurant-about-slider {
   margin-right: -20px;
-  // display: flex;
-  // gap: 20px;
+  width: 510px;
+}
+//   @include tablet {
+//     margin-right: -40px;
+//     gap: 40px;
+//   }
+// }
+.slick-track {
+  display: flex;
+  gap: 20px;
   @include tablet {
-    margin-right: -40px;
+    gap: 40px;
   }
 }
+
 .rest-slider-frame {
-  margin-right: 20px;
-  width: 254px;
+  // margin-right: 20px;
+  width: 245px;
   @include tablet {
-    margin-right: 0 40px;
+    // margin-right: 0 40px;
     width: 194px;
   }
   @include desktop {
@@ -158,11 +166,20 @@
   display: flex;
   justify-content: space-between;
   width: 98px;
-  margin: 0 0 20px auto;
+  margin: 0 0 0 auto;
+  color: $textBlackColor;
+  @include tablet {
+    margin-right: 10px;
+    margin-top: 32px;
+  }
+  @include tablet {
+    margin-top: 36px;
+  }
 }
+
 %arrow {
   background-color: transparent;
-  fill: $textBlackColor;
+  fill: currentColor;
 }
 .right-arrow,
 .left-arrow {
