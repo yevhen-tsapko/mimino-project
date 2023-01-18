@@ -1,0 +1,187 @@
+.about {
+  padding-bottom: 18px;
+  background-color: $primaryBackgroundColor;
+}
+.slogan-container {
+  width: 258px;
+  padding: 16px 0 28px;
+  @include tablet {
+    width: 466px;
+    padding-top: 153px;
+  }
+  @include desktop {
+    width: 555px;
+  }
+}
+.flex-cont {
+  @include tablet {
+    display: flex;
+    transform: translateY(-33px);
+  }
+}
+.slogan-slogan {
+  margin-bottom: 12px;
+
+  font-family: 'Times New Roman';
+  font-size: 20px;
+  line-height: 23px;
+  color: $textPreTitleColor;
+
+  @include tablet {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+}
+
+.slogan-name {
+  margin-bottom: 12px;
+
+  font-family: 'Film P3';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: 0.3em;
+
+  color: $textTitleColor;
+  @include tablet {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+}
+.slogan-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.2;
+  color: $textPostTitleColor;
+  @include tablet {
+    font-size: 16px;
+  }
+}
+.flex-cont {
+  @include tablet {
+    display: flex;
+    transform: translateY(-33px);
+  }
+}
+.about-1-img {
+  width: 244px;
+
+  @include tablet {
+    width: 350px;
+    margin: 0;
+  }
+  @include desktop {
+    width: 460px;
+  }
+}
+.about-1-img.about-rest {
+  margin-left: auto;
+}
+.second-room {
+  display: flex;
+  gap: 20px;
+  margin-top: 32px;
+  @include tablet {
+    gap: 48px;
+    margin-top: 0;
+    transform: translateY(-47px);
+  }
+  @include desktop {
+    gap: 32px;
+    // transform: translateY(-65px);
+  }
+}
+.second-room__img {
+  width: 200px;
+
+  @include tablet {
+    width: 350px;
+  }
+  @include desktop {
+    width: 460px;
+  }
+}
+.second-room__text {
+  @extend .slogan-text;
+  color: $borderColor;
+  padding-top: 70px;
+  @include tablet {
+    width: 312px;
+    padding-top: 194px;
+  }
+  @include desktop {
+    padding-top: 121px;
+  }
+}
+.slider__wrap {
+  overflow: hidden;
+  width: 327px;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-top: 46px;
+
+  @include tablet {
+    width: 427px;
+    margin-right: 0;
+    margin-top: -68px;
+  }
+  @include desktop {
+    width: 547px;
+    margin-right: 10px;
+    margin-left: auto;
+    margin-top: -84px;
+    padding-left: 0;
+  }
+}
+.restaurant-about-slider {
+  margin-right: -20px;
+  width: 510px;
+}
+//   @include tablet {
+//     margin-right: -40px;
+//     gap: 40px;
+//   }
+// }
+.slick-track {
+  display: flex;
+  gap: 20px;
+  @include tablet {
+    gap: 40px;
+  }
+}
+
+.rest-slider-frame {
+  // margin-right: 20px;
+  width: 245px;
+  @include tablet {
+    // margin-right: 0 40px;
+    width: 194px;
+  }
+  @include desktop {
+    width: 254px;
+  }
+}
+
+.arrows-block {
+  display: flex;
+  justify-content: space-between;
+  width: 98px;
+  margin: 0 0 0 auto;
+  color: $textBlackColor;
+  @include tablet {
+    margin-right: 10px;
+    margin-top: 32px;
+  }
+  @include tablet {
+    margin-top: 36px;
+  }
+}
+
+%arrow {
+  background-color: transparent;
+  fill: currentColor;
+}
+.right-arrow,
+.left-arrow {
+  @extend %arrow;
+}
